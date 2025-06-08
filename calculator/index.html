@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <p style="font-size: 26px;" class="js-calculation"></p>
+
+    <p>
+      <button onclick="
+      calculationFunc('1');
+        ">1</button>
+      <button onclick="
+      calculationFunc('2');
+        ">2</button>
+      <button onclick="
+      calculationFunc('3');
+        ">3</button>
+      <button class="orange" onclick="
+      calculationFunc(' + ');
+        ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+      calculationFunc('4');
+        ">4</button>
+      <button onclick="
+      calculationFunc('5');
+        ">5</button>
+      <button onclick="
+      calculationFunc('6');
+        ">6</button>
+      <button class="orange stretch" onclick="
+      calculationFunc(' - ');
+        ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+      calculationFunc('7');
+        ">7</button>
+      <button onclick="
+      calculationFunc('8');
+        ">8</button>
+      <button onclick="
+      calculationFunc('9');
+        ">9</button>
+      <button class="orange stretch" onclick="
+      calculationFunc(' * ');
+        ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+      calculationFunc('0');
+        ">0</button>
+      <button class="stretch" onclick="
+      calculationFunc('.');
+        ">.</button>
+      <button onclick="
+      evelCalculation();
+        ">=</button>
+      <button class="orange stretch" onclick="
+      calculationFunc(' / ');
+        ">/</button>
+    </p>
+
+    <button class="clear" onclick="
+    calculation = '';
+    pElement.innerHTML = '0';
+    localStorage.removeItem('calculation');
+    ">Clear</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
