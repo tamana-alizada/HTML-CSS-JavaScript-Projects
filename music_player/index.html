@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cf484545bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="music_player_container">
+    <nav>
+      <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="circle"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <img src="media/die_with_a_smile.png" alt="die_with_a_smile">
+    <h1>Die With a Smile</h1>
+    <p>Lady Gaga & Bruno Mars</p>
+
+    <audio id="song">
+      <source src="media/die_with_a_smile.mp3">
+    </audio>
+    <input type="range" value="0" id="progress">
+    <div class="controls">
+      <div><i class="fa-solid fa-angles-left"></i></div>
+      <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+      <div><i class="fa-solid fa-angles-right"></i></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

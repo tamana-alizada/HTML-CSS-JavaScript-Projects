@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music_player_container {
+  background: rgb(0, 183, 255);
+  width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .circle {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(0, 94, 131);
+  color: rgb(0, 183, 255);
+}
+
+
+.music_player_container img {
+  width: 220px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  box-shadow: 0 0 10px rgb(0, 94, 131);
+  margin: 20px;
+  animation: rotatingImage 5s infinite linear;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  line-height: 15px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+  background: rgb(0, 94, 131);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 35px;
+  background: rgb(0, 94, 131);
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgb(0, 94, 131);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controls div {
+  margin: 25px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: rgb(0, 183, 255);
+  box-shadow: 0 0 10px rgb(0, 94, 131);
+  cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: rgb(0, 94, 131);
+  color: #fff;
+}
+
+@keyframes rotatingImage {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
